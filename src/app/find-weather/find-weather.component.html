@@ -1,0 +1,48 @@
+<html>
+  <body>
+      <div id="mainSection">
+        <div id="currentTimer"> <!-- Showing current time in India-->
+          <h1>{{ dateTime | async | date: 'HH:mm'}}</h1>
+          <h2>{{ dateTime | async | date: 'd MMMM y'}}</h2>
+        </div>
+        <div id="searchBar">
+            <mat-form-field appearance="fill">
+                <mat-label>Enter city name</mat-label>
+                <input matInput (blur)="onFocusOut($event)" [(ngModel)]="inputValue">
+              </mat-form-field>
+        </div>
+      </div>
+      <div class="weather_details col-md-12 d-flex" *ngIf="showWeather">
+          <div class="humidity col-md-4">
+            <div class="row d-flex">
+              <div class="center_div">
+                <img src="src\assets\humid.png" alt="humidity">
+              </div>
+              <div class="center_div">{{weatherData.humidity}}<sup>o</sup>C</div>
+            </div>
+            <p>Humidity</p>
+          </div>
+          <div class="pressure col-md-4">
+              <div class="row d-flex">
+                  <div class="center_div">
+                    <img src="src\assets\pressure_pick.jpg" alt="pressure">
+                  </div>
+                  <div class="center_div">{{weatherData.pressure}}<sup>o</sup>C</div>
+              </div>
+              <p>Pressure</p>
+          </div>
+          <div class="temperature col-md-4">
+              <div class="row d-flex">
+                  <div class="center_div">
+                    <img src="src\assets\temperature_pick.png" alt="temperature">
+                  </div>
+                  <div class="center_div">{{weatherData.temperature}}<sup>o</sup>C</div>
+              </div>
+              <p>Temperature</p>
+          </div>
+      </div>
+      <div *ngIf="showError" id="snackbar_div">
+        {{inputValue}} weather details are not found!
+      </div>
+  </body>
+</html>

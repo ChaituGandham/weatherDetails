@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    background-image: url("src/assets/bkg3.jpg");
+    background-size: cover;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
+app-find-weather mat-form-field div.mat-form-field-wrapper div.mat-form-field-flex div.mat-form-field-infix input.mat-input-element{
+     color: white;
+     caret-color: white;
+}
+
+app-find-weather mat-form-field div.mat-form-field-wrapper div.mat-form-field-flex div.mat-form-field-infix span.mat-form-field-label-wrapper label.mat-form-field-label mat-label{
+    color: antiquewhite;
+    font-size: 16px;
+}
+
+
+app-find-weather mat-form-field div.mat-form-field-wrapper div.mat-form-field-flex {
+    border-color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    border-bottom-color: white;
+}
+
+app-find-weather mat-form-field div.mat-form-field-wrapper div.mat-form-field-flex:hover {
+    border-color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    border-bottom-color: white;
+}
+

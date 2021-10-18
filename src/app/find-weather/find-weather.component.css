@@ -1,0 +1,59 @@
+#mainSection {
+    height: auto;
+    width: 100%;
+}
+h1 {
+    margin: 0;
+    font-size: 36px;
+    text-align: left;
+    padding-left: 5rem;
+}
+h2 {
+    margin: 5px;
+}
+#currentTimer {
+    border: 2px solid transparent;
+    color: white;
+}
+
+mat-form-field {
+    width: 80%;
+}
+.weather_details{
+    padding: 2rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    width: 50%;
+    border-radius: 25px;
+}
+.humidity, .pressure, .temperature{
+    padding: 1rem;
+    text-align: center;
+    /* border: 1px solid white; */  
+    border-radius: 5px;
+    margin-right: 1rem;
+    color: white;
+    font-size: 25px;
+}
+.center_div {
+    margin: 0 auto;
+}
+p {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+#searchBar {
+    text-align: center;
+    margin: 0 auto;
+   /*  border: 2px solid papayawhip; */
+    border-radius: 5px;
+    width: 50%;
+}
+#snackbar_div{
+    text-align: center;
+    color: brown;
+}
